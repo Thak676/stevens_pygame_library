@@ -5,7 +5,7 @@ Only tested in wsl.
 
 ```
 import pygame
-from l01 import *
+from stevens_pygame_library import *
 from pygame.locals import *
 
 init(640, 640)
@@ -23,7 +23,7 @@ while True:
 
 ```
 import pygame
-from l01 import *
+from stevens_pygame_library import *
 from pygame.locals import *
 
 init(640, 640)
