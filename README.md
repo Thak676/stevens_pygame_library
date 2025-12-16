@@ -1,8 +1,9 @@
 
 Only tested in wsl.
 
-Example 1, blue sky:
+# Example 1, blue sky:
 
+```
 import pygame
 from l01 import *
 from pygame.locals import *
@@ -15,9 +16,11 @@ while True:
                 if event.type == QUIT:
                         quit()
         update_screen()
+```
 
-Example 2, blue sky with cloud (you must supply your own image):
+# Example 2, blue sky with cloud (you must supply your own image):
 
+```
 import pygame
 from l01 import *
 from pygame.locals import *
@@ -32,4 +35,4 @@ while True:
                 if event.type == QUIT:
                         quit()
         update_screen()
-
+```
