@@ -1,17 +1,16 @@
 
-Allows for simple code like the following (you need to supply your own image):
+Only tested in wsl.
+
+Allows for simple code like the following:
 
 import pygame
 from l01 import *
 from pygame.locals import *
 
-initialize(640, 640)
-
-cloud = Image_Rect("images/clouds/cloud_1.png", 100, 100)
+init(640, 640)
 
 while True:
-        fill_screen((19, 214, 248))
-        cloud.draw()
+        fill_screen(19, 214, 248)
         for event in pygame.event.get():
                 if event.type == QUIT:
                         quit()
