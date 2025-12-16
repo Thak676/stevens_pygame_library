@@ -18,7 +18,8 @@ while True:
         update_screen()
 ```
 
-# Example 2, blue sky with cloud (you must supply your own image):
+# Example 2, blue sky with cloud:
+(you must supply your own image)
 
 ```
 import pygame
