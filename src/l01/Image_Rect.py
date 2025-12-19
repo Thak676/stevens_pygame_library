@@ -1,6 +1,6 @@
 
 import pygame
-from . import global_vars 
+from . import global_vars
 
 class Image_Rect:
 
@@ -9,8 +9,14 @@ class Image_Rect:
 		self.img.set_colorkey((0, 0, 0))
 		self.x = x
 		self.y = y
-		self.pos = (self.x, self.y)
+
+	@property
+	def pos(self) -> tuple[int, int]:
+		return (self.x, self.y)
+
+	@pos.setter
+	def pos(self, value: tuple[int, int]):
+		self.x, self.y = value
 
 	def draw(self):
-		global_vars.screen.blit(self.img, self.pos)	
-	
+		global_vars.screen.blit(self.img, self.pos)
