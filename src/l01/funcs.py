@@ -5,10 +5,11 @@ from pygame.locals import *
 from . import global_vars
 from typing import Callable
 
-def init(x: int, y: int) -> None:
+def init(x: int, y: int):
 	pygame.init()
 	global_vars.screen = pygame.display.set_mode((x, y))
 	global_vars.clock = pygame.time.Clock()
+	return global_vars.screen, global_vars.clock
 	
 def quit():
 	pygame.quit()

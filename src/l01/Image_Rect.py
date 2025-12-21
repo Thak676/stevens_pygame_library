@@ -7,8 +7,23 @@ class Image_Rect:
 	def __init__(self, file_path: str, x: int, y: int):
 		self.img: pygame.Surface = pygame.image.load(file_path)
 		self.img.set_colorkey((0, 0, 0))
-		self.x = x
-		self.y = y
+		self.rect = pygame.Rect(x, y, self.img.get_width(), self.img.get_height())
+
+	@property
+	def x(self) -> int:
+		return self.rect.x
+
+	@x.setter
+	def x(self, value: int):
+		self.rect.x = value
+
+	@property
+	def y(self) -> int:
+		return self.rect.y
+
+	@y.setter
+	def y(self, value: int):
+		self.rect.y = value
 
 	@property
 	def pos(self) -> tuple[int, int]:
