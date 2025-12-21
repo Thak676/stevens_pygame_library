@@ -20,3 +20,4 @@ class Image_Rect:
 
 	def draw(self):
 		global_vars.screen.blit(self.img, self.pos)
+
