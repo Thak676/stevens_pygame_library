@@ -1,7 +1,7 @@
 
 from .funcs import *
 from .Image_Rect import Image_Rect
-from .global_vars import *
+from . import global_vars
 IR = Image_Rect
 
 # Store registered functions
