@@ -1,8 +1,8 @@
 
 import pygame
 
-screen: pygame.Surface
-clock: pygame.time.Clock
+screen = None
+clock = None
 keys: dict = {
 	"w": False,
 	"a": False,

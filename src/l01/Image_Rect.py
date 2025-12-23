@@ -33,6 +33,8 @@ class Image_Rect:
 	def pos(self, value: tuple[int, int]):
 		self.x, self.y = value
 
-	def draw(self):
-		global_vars.screen.blit(self.img, self.pos)
+	def draw(self, surface=None):
+		if surface is None:
+			surface = global_vars.screen
+		surface.blit(self.img, self.pos)
 
