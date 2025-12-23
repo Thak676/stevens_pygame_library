@@ -8,17 +8,11 @@ IR = Image_Rect
 _user_update = None
 _window_size = (400, 400)
 
-def game(func):
+def update(func):
 	"""Decorator to register the game's update function and start the game loop."""
 	global _user_update
 	_user_update = func
 	run()
-	return func
-
-def update(func):
-	"""Decorator to register the update function without auto-starting."""
-	global _user_update
-	_user_update = func
 	return func
 
 def set_window(x: int, y: int):
