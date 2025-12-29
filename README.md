@@ -1,11 +1,13 @@
 
-Only tested in wsl.
+Only tested in wsl. It is named 'l01' simply because it is the first iteration of this library, and there are probably more to come.
+I import it using uv. After doing uv init:
+uv add --editable PATH_TO_LIB
 
 # Example 1, blue sky:
 
 ```
 import pygame
-from stevens_pygame_library import *
+from l01 import *
 from pygame.locals import *
 
 init(640, 640)
@@ -23,7 +25,7 @@ while True:
 
 ```
 import pygame
-from stevens_pygame_library import *
+from l01 import *
 from pygame.locals import *
 
 init(640, 640)
