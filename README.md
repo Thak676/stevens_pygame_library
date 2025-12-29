@@ -1,5 +1,9 @@
 
-Only tested in wsl. It is named 'l01' simply because it is the first iteration of this library, and there are probably more to come.
+Only tested in wsl.
+
+It is named 'l01' simply because it is the first iteration of this library, and there are probably more to come.
+
+IMPORT:
 I import it using uv. After doing uv init:
 uv add --editable PATH_TO_LIB
 
