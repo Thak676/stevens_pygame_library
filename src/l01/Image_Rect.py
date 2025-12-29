@@ -8,6 +8,7 @@ class Image_Rect:
 		self.img: pygame.Surface = pygame.image.load(file_path)
 		self.img.set_colorkey((0, 0, 0))
 		self.rect = pygame.Rect(x, y, self.img.get_width(), self.img.get_height())
+		self.vel: pygame.math.Vector2 = pygame.math.Vector2(0, 0)
 
 	@property
 	def x(self) -> int:
