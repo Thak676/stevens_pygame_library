@@ -7,7 +7,7 @@ from typing import Callable
 
 def init(x: int, y: int):
 	pygame.init()
-	global_vars.screen = pygame.display.set_mode((x, y))
+	global_vars.screen = pygame.display.set_mode((x, y), pygame.FULLSCREEN)
 	global_vars.clock = pygame.time.Clock()
 	return global_vars.screen, global_vars.clock
 	
@@ -46,6 +46,8 @@ def process_events():
                 keys["a"] = True
             if event.key == K_d:
                 keys["d"] = True
+            if event.key == K_SPACE:
+                keys["space"] = True
         if event.type == KEYUP:
             if event.key == K_UP:
                 keys["up"] = False
@@ -63,5 +65,7 @@ def process_events():
                 keys["left"] = False
             if event.key == K_RIGHT:
                 keys["right"] = False
+            if event.key == K_SPACE:
+                keys["space"] = False
 pe: callable = process_events
 

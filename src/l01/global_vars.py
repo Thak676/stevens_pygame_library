@@ -11,7 +11,8 @@ keys: dict = {
 	"up": False,
 	"down": False,
 	"left": False,
-	"right": False
+	"right": False,
+	"space": False
 }
 k = keys
 
